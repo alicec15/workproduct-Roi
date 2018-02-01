@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack & nodemon server/app.js",
-    "build": "webpack"
+    "build-client": "webpack"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
     "nodemon": "^1.14.11",
     "webpack": "^3.10.0"
   }
