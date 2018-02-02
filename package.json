@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-client": "webpack",
+    "build-client-watch": "webpack -w",
     "start": "webpack & nodemon server/app.js",
-    "build-client": "webpack"
+    "start-dev": "npm run build-client-watch & npm run start-server",
+    "start-server": "NODE_ENV='development' nodemon server/app.js -e html,js,scss --ignore public"
   },
   "repository": {
     "type": "git",
