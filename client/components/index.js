@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Navbar from './Navbar.jsx'
+import Home from './Home.jsx'
 
 export default class App extends Component {
   constructor() {
@@ -10,6 +11,7 @@ export default class App extends Component {
     return (
       <div>
         <Navbar />
+        <Home />
       </div>
     )
   }
