@@ -6,6 +6,11 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", "Roboto",  Helvetica, sans-serif;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column
+}
+
 /* Navbar related content */
 
 nav {
@@ -40,7 +45,7 @@ nav {
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  background-position: center;
+  background-position: 50% 0%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -57,4 +62,23 @@ nav {
   transition: all .3s linear;
 }
 
-.parallax:hover:before { background: none; }
+.parallax:hover:before { 
+  background: none; 
+}
+
+/* Informational sections */
+
+.info {
+  background-color: white;
+  z-index: 1;
+  height: 500px;
+  box-shadow: rgba(0,0,0,.2) 3px 5px 5px
+}
+
+.info--list li {
+  color: rgba(0,0,0,.5)
+}
+
+.col-md-6.offset-md-3 {
+  margin-top: 10vh
+}

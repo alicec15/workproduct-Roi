@@ -8,6 +8,7 @@ export default class Home extends Component {
   render () {
     return (
       <div className="parallax"> <h1>add some kind of logo here and position it lOL</h1> </div>
+
     )
   }
 }
