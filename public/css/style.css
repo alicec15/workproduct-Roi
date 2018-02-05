@@ -50,6 +50,13 @@ nav {
   background-size: cover;
 }
 
+.parallax h1 {
+  position: relative;
+  color: rgba(255, 255, 255, 0.812);
+  text-align: center;
+  margin-top: 400px;
+}
+
 .parallax:before {
   content: "";
   display: block;
@@ -66,7 +73,7 @@ nav {
   background: none; 
 }
 
-/* Informational sections */
+/* info sections */
 
 .info {
   background-color: white;
@@ -75,8 +82,14 @@ nav {
   box-shadow: rgba(0,0,0,.2) 3px 5px 5px
 }
 
+.mission {
+  margin: 20px;
+  color: rgba(0,0,0,.75);
+}
+
 .info--list li {
-  color: rgba(0,0,0,.5)
+  color: rgba(0,0,0,.5);
+  margin: 0 0 20px 0; 
 }
 
 .col-md-6.offset-md-3 {
