@@ -7,7 +7,7 @@ export default class Home extends Component {
 
   render () {
     return (
-      <div className="parallax"> <h1 style={{height: 100}}>Innovation in Eye Diseases</h1> </div>
+      <div className="parallax"> <h1 >Innovation in Eye Diseases</h1> </div>
 
     )
   }

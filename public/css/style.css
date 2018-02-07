@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Open Sans", "Roboto",  Helvetica, sans-serif;
 }
 
+body, html {
+  height: 100%;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column
@@ -38,23 +42,26 @@ nav {
 
 .parallax {
   /* The image used */
-  background-image: url("../img/homebackground.jpeg");
-
-  /* Set a specific height */
-  height: 500px; 
-
-  /* Create the parallax scrolling effect */
+  background-image: url("../img/background2.jpeg"); 
   background-attachment: fixed;
-  background-position: 50% 0%;
   background-repeat: no-repeat;
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+  background-position: 50% 0%;
   background-size: cover;
+
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .parallax h1 {
   position: relative;
   color: rgba(255, 255, 255, 0.812);
   text-align: center;
-  margin-top: 400px;
+  margin-top: 48%;
+  height: 100px
 }
 
 .parallax:before {
@@ -78,20 +85,63 @@ nav {
 .info {
   background-color: white;
   z-index: 1;
-  height: 500px;
-  box-shadow: rgba(0,0,0,.2) 3px 5px 5px
+  padding: 20px;
+  box-shadow: rgba(105,192,215,.43) 0px 2px 0px
 }
 
-.mission {
+.sectionhead {
   margin: 20px;
-  color: rgba(0,0,0,.75);
+  color: rgba(42, 147, 189, 0.705);
+}
+
+.sectionhead2 {
+  margin: 20px;
+  color: rgba(255, 255, 255, 0.705);
 }
 
 .info--list li {
   color: rgba(0,0,0,.5);
   margin: 0 0 20px 0; 
+  margin-top: 30px
 }
 
 .col-md-6.offset-md-3 {
-  margin-top: 10vh
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.description p {
+  color: rgba(0,0,0,.5);
+}
+
+.focus {
+  background: linear-gradient(
+    rgba(0, 149, 255, 0.34),
+    rgba(0, 149, 255, 0.34)
+  ),
+    url("../img/focuspic.jpeg"); 
+  background-attachment: absolute;
+  background-repeat: no-repeat;
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+  /* background-position: 50% 0%; */
+  background-size: cover;
+
+  max-height: 100%;
+  margin: 0;
+  /* padding: 20px; */
+}
+
+.layer {
+  background-color: rgba(0, 149, 255, 0.34);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  margin: 20px auto 20px; 
 }

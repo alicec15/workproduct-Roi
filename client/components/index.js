@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from './Navbar.jsx'
 import Home from './Home.jsx'
 import Mission from './Mission.jsx'
+import Focus from './Focus.jsx'
 
 export default class App extends Component {
   constructor() {
@@ -14,6 +15,7 @@ export default class App extends Component {
         <Navbar />
         <Home />
         <Mission />
+        <Focus />
       </div>
     )
   }
