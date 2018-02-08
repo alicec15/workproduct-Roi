@@ -3,6 +3,7 @@ import Navbar from './Navbar.jsx'
 import Home from './Home.jsx'
 import Mission from './Mission.jsx'
 import Focus from './Focus.jsx'
+import News from './News.jsx'
 
 export default class App extends Component {
   constructor() {
@@ -16,6 +17,7 @@ export default class App extends Component {
         <Home />
         <Mission />
         <Focus />
+        <News />
       </div>
     )
   }

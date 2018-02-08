@@ -28,7 +28,7 @@ export default class Focus extends Component {
           </div>
           <div className="row">
             {/* <button type="button" class="btn btn-outline-dark">DARAPLADIB</button> */}
-            <button type="button" class="btn btn-secondary" style={{"opacity": "0.8", "margin-bottom": "20px"}}> 
+            <button type="button" className="btn btn-secondary" style={{"opacity": "0.8", "marginBottom": "20px"}}> 
               DARAPLADIB
             </button>
           </div>
