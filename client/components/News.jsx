@@ -32,7 +32,7 @@ export default class News extends Component {
   help(name, location, issue) {
     console.log('pls')
     return (
-      <div className="col-md-4">
+      <div id={issue} className="col-md-4">
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">{ name }</h5>
@@ -55,8 +55,8 @@ export default class News extends Component {
         </div>
         <div className="card-responsive">
 
-        { this.state.arr.map(tic => {
-          return this.help(tic.names, tic.issue)
+        { this.state.arr.map((tic, ind) => {
+          return this.help(tic.names, tic.issue, ind)
         }) }
 
           {/* <div className="col-md-4">

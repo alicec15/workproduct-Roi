@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body, html {
   height: 100%;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -165,4 +166,35 @@ button {
   /* max-width: 1200px; */
   display: flex;
   flex-direction: row
+}
+
+/* footer */
+
+.mojFooter{
+  background-color: #f8f8f8;
+  color: #00a651;
+  padding-top: 0px;
+  border-top: 1px solid #e7e7e7;
+  margin-bottom: 0px;
+}
+
+.bottom-footer{
+  border-top: 1px solid #00a651;
+  margin-top: 0px;
+  padding-top: 7px;
+  color: #00a651;
+
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer nav {
+  background-color: rgba(0, 149, 255, 0.34)
 }
