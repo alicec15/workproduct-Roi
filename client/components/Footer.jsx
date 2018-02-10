@@ -8,10 +8,10 @@ export default class Footer extends Component {
   render() {
     return (
       <footer >
-        <nav className="navbar bottom footer">
+        {/* <nav className="navbar bottom">
           <p>Occuvant Sciences</p>
-        </nav>
-
+        </nav> */}
+        <p>Occuvant Sciences</p>
       </footer>
     )
   }

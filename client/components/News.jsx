@@ -14,7 +14,7 @@ var master = [
   {
     names: 'Imani & Jacob',
     location: '9F',
-    issue: 'Donkey picture not displaying on hover in Zoology app. :('
+    issue: 'Donkey picture not displaying on hover in Zoology app. :(Donkey picture not displaying on hover in Zoology app. :(Donkey picture not displaying on hover in Zoology app. :(Donkey picture not displaying on hover in Zoology app. :('
   }
 ];
 
@@ -37,7 +37,7 @@ export default class News extends Component {
           <div className="card-body">
             <h5 className="card-title">{ name }</h5>
             <p className="card-text">{ location }</p>
-            <a href="#" className="btn btn-primary"> click for article </a>
+            <a href="#" className="btn btn-outline-secondary"> read more </a>
           </div>
         </div>
       </div>

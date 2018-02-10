@@ -8,7 +8,6 @@ export default class Navbar extends Component {
   }
   render () {
     return (
-
       <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top fixed-top">
         <a className="navbar-brand" href="#"><img className="logo" src="img/ocuvantlogo.png" /></a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

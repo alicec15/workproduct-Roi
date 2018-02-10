@@ -41,7 +41,7 @@ nav {
 
 /* Home related content */
 
-.parallax {
+.homepage {
   /* The image used */
   background-image: url("../img/background2.jpeg"); 
   background-attachment: fixed;
@@ -51,33 +51,34 @@ nav {
   width: 100%;
   background-position: 50% 0%;
   background-size: cover;
+  position: absolute;
+  z-index: 0;
 
   max-height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.parallax h1 {
-  position: relative;
-  color: rgba(255, 255, 255, 0.812);
-  text-align: center;
-  margin-top: 48%;
-  height: 100px
-}
-
-.parallax:before {
-  content: "";
-  display: block;
-  position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   right: 0;
+
+  transition: ease-out 1s;
+}
+
+.image h1 {
+  color: white;
+  text-align:center;
+  margin-top: -100px;
+  height: 100px;
+}
+
+.image {
+  padding-top: 56.7%;
   background: rgba(0, 149, 255, 0.34);
   transition: all .3s linear;
 }
 
-.parallax:hover:before { 
+.image:hover {
   background: none; 
 }
 
@@ -123,8 +124,6 @@ nav {
     url("../img/focuspic.jpeg"); 
   background-attachment: absolute;
   background-repeat: no-repeat;
-  /* Set a specific height */
-  height: 100%;
   width: 100%;
   /* background-position: 50% 0%; */
   background-size: cover;
@@ -143,7 +142,7 @@ nav {
   height: 100%;
 }
 
-button {
+.focus button {
   margin: 20px auto 20px; 
 }
 
@@ -168,6 +167,17 @@ button {
   flex-direction: row
 }
 
+.card-body {
+  height: 200px
+}
+
+.card-text {
+  /* height: 80px; */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
 /* footer */
 
 .mojFooter{
@@ -186,15 +196,24 @@ button {
 
 }
 
-.footer {
+/* .footer {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   text-align: center;
+} */
+
+footer {
+  position: relative;
+  bottom: 0;
+  height: 100px;
+  /* background-color: rgba(0, 149, 255, 0.34) */
+  background-color: rgba(105, 192, 217, 0.76)
 }
 
 footer nav {
+  position: absolute; 
   background-color: rgba(0, 149, 255, 0.34)
 }

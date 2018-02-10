@@ -23,11 +23,16 @@
   "homepage": "https://github.com/alicec15/workproduct-Roi#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "radium": "^0.22.0",
     "react": "^16.2.0",
+    "react-dimensions": "^1.3.1",
     "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
+    "react-motion": "^0.5.2",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-router-dom": "^4.2.2",
+    "react-swipeable-views": "^0.12.12"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
