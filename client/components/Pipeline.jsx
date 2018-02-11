@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router'
+import Timeline from './Timeline.jsx'
 
 export class Pipeline extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export class Pipeline extends Component {
   render() {
     return (
       <div>
-        <div style={{"height": "500px"}}> <h1> PLS SHOW THIS PLS </h1></div>
+        <Timeline />
       </div>
     )
   }
