@@ -69,8 +69,8 @@ nav {
 .image h1 {
   color: white;
   text-align:center;
-  margin-top: -100px;
-  height: 100px;
+  margin-top: -200px;
+  /* height: 200px; */
 }
 
 .image {
@@ -228,4 +228,27 @@ footer nav {
 
 .head {
   color: rgba(42, 147, 189, 0.705);
+}
+
+.dme {
+  background: linear-gradient(
+    rgba(0, 149, 255, 0.34),
+    rgba(0, 149, 255, 0.34)
+  ),
+    url("../img/happy2.png"); 
+  background-attachment: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  /* background-position: 50% 0%; */
+  background-size: cover;
+
+  max-height: 100%;
+  margin: 0;
+  /* padding: 20px; */
+}
+
+.research {
+  margin-top: 40px;
+  /* box-shadow: 0 5px 6px -6px #222; */
 }

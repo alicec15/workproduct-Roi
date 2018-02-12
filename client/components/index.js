@@ -12,6 +12,7 @@ import Homepage from './Homepage.jsx'
 import Root from './Root.jsx'
 import Pipeline from './Pipeline.jsx'
 import Contactpage from './Contactpage.jsx'
+import DME from './DME.jsx'
 
 import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -30,6 +31,7 @@ export default class App extends Component {
             <Switch>
               <Route path='/pipeline' component={ Pipeline } />
               <Route path='/contact' component={ Contactpage } />
+              <Route path='/dme' component={ DME } />
               <Route exact path='/' component={ Homepage } />
             </Switch>
           </div>
