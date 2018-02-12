@@ -22,6 +22,9 @@
   },
   "homepage": "https://github.com/alicec15/workproduct-Roi#readme",
   "dependencies": {
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "express": "^4.16.2",
     "jquery": "^3.3.1",
     "radium": "^0.22.0",

@@ -11,6 +11,7 @@ import Footer from './Footer.jsx'
 import Homepage from './Homepage.jsx'
 import Root from './Root.jsx'
 import Pipeline from './Pipeline.jsx'
+import Contactpage from './Contactpage.jsx'
 
 import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -28,6 +29,7 @@ export default class App extends Component {
             <Navbar/>
             <Switch>
               <Route path='/pipeline' component={ Pipeline } />
+              <Route path='/contact' component={ Contactpage } />
               <Route exact path='/' component={ Homepage } />
             </Switch>
           </div>

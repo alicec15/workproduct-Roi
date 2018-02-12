@@ -1,39 +1,45 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import HorizontalTimelineContent from './HorizontalTimelineContent';
-import GameInfo from '../resources/content';
+// import Contents from '../utils/contents';
+// import HorizontalTimelineContent from './HorizontalTimelineContent';
 
-// import 'bootstrap-webpack';
 
-export default class Timeline extends React.Component {
+export default class HTFinal extends React.Component {
   constructor(props) {
     super(props);
     this.state = { value: 0, previous: 0 };
   }
 
-  componentWillMount() {
-    this.data = GameInfo.map((game, index) => {
-      return ({
-        date: game.date,
-        title: game.title,
-        component: (
-          <div className='container' key={index}>
-            <h1>{ `The Elder Scrolls ${index + 1}:`}</h1>
-            <h2>{ game.subtitle }</h2>
-            <hr />
-            <p>{ game.content}</p>
-            <hr />
-          </div>
-        )
-      });
-    });
-  }
+  // componentWillMount() {
+  //   const divStyle={overflow: 'hidden'};
+  //   this.data = Contents.map((content, index) => {
+  //     return ({
+  //       date: content.date,
+  //       component: (
+  //         <div style={divStyle} key={index}>
+  //           <div className="row container container-no-top text-left">
+  //             <img className="content-pic" src={`${content.picture}`}></img>
+  //             <p className="content-content col-lg-10 col-md-10 col-sm-10"> { content.content } </p>
+  //             {/*<p>{ content.content}</p>
+  //           <hr />*/}
+  //           </div>
+  //         </div>
+  //       )
+  //     });
+  //   });
+  // }
 
   render() {
-    return (
-      <HorizontalTimelineContent
-        content={this.data} />
-    );
+    return(
+      <div className="bg-container container">
+        <div className="bg">
+          <div className="container">
+            <h1>My Story Line</h1>
+            <hr />
+          </div>
+          {/* <HorizontalTimelineContent content={this.data}/> */}
+        </div>
+      </div>
+    )
   }
 }

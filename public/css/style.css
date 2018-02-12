@@ -8,12 +8,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 body, html {
   height: 100%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .wrapper {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  height: 100%
 }
 
 /* Navbar related content */
@@ -180,22 +181,6 @@ nav {
 }
 /* footer */
 
-.mojFooter{
-  background-color: #f8f8f8;
-  color: #00a651;
-  padding-top: 0px;
-  border-top: 1px solid #e7e7e7;
-  margin-bottom: 0px;
-}
-
-.bottom-footer{
-  border-top: 1px solid #00a651;
-  margin-top: 0px;
-  padding-top: 7px;
-  color: #00a651;
-
-}
-
 /* .footer {
   position: absolute;
   right: 0;
@@ -207,6 +192,7 @@ nav {
 
 footer {
   position: relative;
+  width: 100%;
   bottom: 0;
   height: 100px;
   /* background-color: rgba(0, 149, 255, 0.34) */
@@ -216,4 +202,30 @@ footer {
 footer nav {
   position: absolute; 
   background-color: rgba(0, 149, 255, 0.34)
+}
+
+/* pipeline */
+
+.pipeline {
+  /* height: 500px; */
+  margin-top: 150px;
+  padding-left: 0px;
+  padding-right: 0px
+}
+
+.pagehead {
+  color: rgba(42, 147, 189, 0.705);
+  margin-bottom: 60px
+}
+
+.descrip {
+  color: rgba(0,0,0,.5)
+}
+
+.form-button button {
+  margin: 20px auto 20px;
+}
+
+.head {
+  color: rgba(42, 147, 189, 0.705);
 }
