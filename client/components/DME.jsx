@@ -16,7 +16,16 @@ export class DME extends Component {
             <h1 className="pagehead" style={{'margin-top': '50px'}}> Diabetic Macular Edema </h1>
           </div>
           <div className="row descrip">
-            <p> hello farewell, what do i write here </p>
+            <p className='descrip'> The number of patients with vision related dieases associated 
+            with diabetes is increasing each year due to the weaken of blood vessels in the retina. Although this 
+            is becoming a more prevelant problem, the therapies that are currently administered to treat DME are 
+            insufficent. Laser photocoagulation treats the symptoms of DME and only results in 50% less vision 
+            loss. Lucentis (anti-VEGF), on the otherhand, is a monthly injection that targets the growth factor 
+            responsible for stimulating blood vessel growth (which leads to high vascular permeability). Although, 
+            this treatment tackles the growth pathway, it is invasive and has only a 50% response rate. In pushing
+            Darapladib through the clinial trials, we are aiming to provide a DME treatment that is highly effective
+            and non-invasive.
+            </p>
           </div>
           <div className="row">
             <h2 className="pagehead" style={{'margin-top': '50px'}}> Research </h2>

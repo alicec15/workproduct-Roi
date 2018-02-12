@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import { Link, NavLink, withRouter } from 'react-router-dom'
 
-export default class Mission extends Component {
+export class Mission extends Component {
   constructor(props) {
     super(props)
   }
@@ -21,10 +22,9 @@ export default class Mission extends Component {
         </div>
         <div className="col-md-6 offset-md-3"> 
           <ul className="info--list "> 
-            <li><b>Administer</b> daily oral darapladib (160 mg) as  done in previous cardiovascular and DME trials</li>
-            <li><b>Enroll</b> DME patients with baseline vision worse  than 20/40 (rather than 20/32)
-            Same criteria as Lucentis Phase-3 Trial</li>
-            <li><b>Enroll</b> DME patients who respond poorly to  anti-VEGF therapy (50% of DME patients)</li>
+            <li><b>Transform</b> treatments for vision diseases where current therapies are invasive or ineffective</li>
+            <li><b>Provide</b> safe alternative treatments to numerous patients suffering from these dieases  </li>
+            <li><b>Improve</b> quality of life in patients with eye diseases </li>
           </ul>
         </div>
       </div>
@@ -32,3 +32,4 @@ export default class Mission extends Component {
     )
   }
 }
+export default withRouter(Mission)

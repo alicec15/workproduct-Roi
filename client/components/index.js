@@ -23,6 +23,10 @@ export default class App extends Component {
     super()
   }
 
+  componentDidMount(){
+    console.log('this', this.props)
+  }
+
   render() {
     return (
         <Router history={ history }>  

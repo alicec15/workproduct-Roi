@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router'
 
 var master = [
   {
@@ -18,7 +19,7 @@ var master = [
   }
 ];
 
-export default class News extends Component {
+export class News extends Component {
   constructor(props) {
     super(props)
 
@@ -75,3 +76,4 @@ export default class News extends Component {
   }
 
 }
+export default withRouter(News)
